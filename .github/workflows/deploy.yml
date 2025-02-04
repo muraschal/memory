@@ -1,0 +1,24 @@
+name: Deploy to Vercel
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: npm install
+      - name: Deploy to Vercel
+        run: npx vercel --token ${VERCEL_TOKEN} --yes
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_DEPLOY_TOKEN_PROD }}
+
+## 🔄 Deployment
+Automatisches Deployment auf Vercel bei Push auf den `main` Branch. 

@@ -1,17 +1,25 @@
 # 🎮 Memory Game
 
-Ein modernes Memory-Spiel, gebaut mit React & TypeScript. Live auf Vercel.
+Ein modernes Memory-Spiel mit schönem Holz-Design und harmonischen Soundeffekten, entwickelt mit React & TypeScript.
 
-## 🚀 Live Demo
-https://memory-muraschal.vercel.app
+## 🌟 Features
+
+- 🎯 Klassisches 4x4 Memory-Spiel mit Tiersymbolen
+- 🎨 Skeuomorphes Holz-Design mit goldenen Akzenten
+- 🔊 Harmonische Sound-Effekte mit Web Audio API
+- 📱 Vollständig responsive für alle Bildschirmgrößen
+- ✨ Smooth Flip-Animationen
+- 🎵 Musikalisches Feedback bei Matches und Spielende
 
 ## 🛠️ Tech Stack
-- React + TypeScript
-- Vite
-- Vercel
-- GitHub Actions
 
-## 🚀 Lokale Entwicklung
+- React 18
+- TypeScript
+- Vite
+- CSS3 mit modernen Animationen
+- Web Audio API
+
+## 🚀 Installation & Start
 
 ```bash
 # Repository klonen
@@ -27,56 +35,30 @@ npm install
 npm run dev
 ```
 
-## 🔄 Deployment
+## 🎮 Spielanleitung
+
+1. Klicke auf eine Karte, um sie umzudrehen
+2. Finde Paare von identischen Tiersymbolen
+3. Harmonische Sounds geben Feedback über deine Aktionen:
+   - Kartendreh: Sanfter C5 Ton
+   - Match: Aufsteigende C-Dur Terz
+   - Kein Match: Absteigende kleine Terz
+   - Sieg: C-Dur Dreiklang
+
+## 🎨 Design
+
+- Dunkles Holz-Theme mit goldenen Akzenten
+- Große, dekorative Emoji-Symbole
+- Responsive Layout mit optimierter Kartengröße
+- Smooth Transitions und Animationen
+
+## 🔄 Automatisches Deployment
+
 Automatisches Deployment auf Vercel bei Push auf den `main` Branch.
 
-# React + TypeScript + Vite
+## 📝 Lizenz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MIT
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+Entwickelt mit ❤️ von [muraschal](https://github.com/muraschal)
