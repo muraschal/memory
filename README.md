@@ -1,3 +1,35 @@
+# 🎮 Memory Game
+
+Ein modernes Memory-Spiel, gebaut mit React & TypeScript. Live auf Vercel.
+
+## 🚀 Live Demo
+https://memory-muraschal.vercel.app
+
+## 🛠️ Tech Stack
+- React + TypeScript
+- Vite
+- Vercel
+- GitHub Actions
+
+## 🚀 Lokale Entwicklung
+
+```bash
+# Repository klonen
+git clone https://github.com/muraschal/memory.git
+
+# Ins Projektverzeichnis wechseln
+cd memory
+
+# Dependencies installieren
+npm install
+
+# Entwicklungsserver starten
+npm run dev
+```
+
+## 🔄 Deployment
+Automatisches Deployment auf Vercel bei Push auf den `main` Branch.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
