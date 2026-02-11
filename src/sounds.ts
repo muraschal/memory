@@ -1,17 +1,3 @@
-// Kürzere, lokale Sound-Effekte für bessere Reaktionszeit
-const sounds = {
-  flip: new Audio('/sounds/card-flip.mp3'),     // ~100ms kurzer Flip-Sound
-  match: new Audio('/sounds/match.mp3'),        // ~200ms Erfolgs-Sound
-  wrong: new Audio('/sounds/wrong.mp3'),        // ~200ms Error-Sound
-  victory: new Audio('/sounds/victory.mp3')      // ~500ms Sieges-Sound
-}
-
-// Sounds vorladen
-Object.values(sounds).forEach(sound => {
-  sound.load()
-  sound.volume = 0.3
-})
-
 // Einen einzelnen AudioContext für alle Sounds erstellen
 const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)()
 

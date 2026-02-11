@@ -19,6 +19,3 @@ jobs:
         run: npx vercel --token ${VERCEL_TOKEN} --yes
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_DEPLOY_TOKEN_PROD }}
-
-## 🔄 Deployment
-Automatisches Deployment auf Vercel bei Push auf den `main` Branch. 
